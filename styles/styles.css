@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open-sans', sans-serif;
+}
+
+:root {
+    --primary-color: #233e50;
+    --secondary-color: #ffd902;
+    --third-color: #333;
+    --font-size: 16px;
+}
+
+.profile-pic {
+    border-radius: 1rem;
+    width: 8%;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    display: absolute;
+    float: left;
+}
+
+.name {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    justify-content: space-evenly;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar ul li:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.navbar ul li a {
+    color: var(--third-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: var(--font-size);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    display: flex;
+}
+
+.navbar ul li a:hover {
+    color: yellow;
+    background-color: var(--third-color);
+    border-radius: 5px;
+}
+
+.course-title {
+    margin: 4rem;
+    font-size: 2rem;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+ h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: left;
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    max-width: 100%;
+}
+
+.upper-content {
+    display: flex;
+    gap: 20px;
+    margin: 2rem 0;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#course-work, #mycity {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+#course-work ul {
+    padding-left: 2rem;
+    margin: 1rem;
+}
+
+#mycity img {
+    width: 80%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+#mycity figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--third-color);
+}
+
+#course {
+    margin: 1rem 0 0 0;
+    background-color: var(--secondary-color);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+/* buttons, not sure if I need to add this */ 
+
+/* Course filter buttons */
+.filter-buttons {
+  margin: 20px 0;
+  padding: 2rem;
+}
+
+.filter-buttons button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Course boxes */
+.course-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.course-boxes div {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--third-color);
+}
+
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
