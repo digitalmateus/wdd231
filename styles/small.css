@@ -1,0 +1,185 @@
+:root {
+    --primary-color: #233e50;
+    --secondary-color: #ffd902;
+    --third-color: #333;
+    --font-size: 16px;
+     font-family: 'open-sans', sans-serif;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 01rem;
+    margin-top: 0;
+}
+
+header,footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+section {
+    margin: 10px;
+    border: 1px solid rgb(147, 147, 147);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+figure img {
+    display: block;
+    margin: 0 auto;
+    min-width: 150px;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 5px;
+    border: 2px solid var(--dark-background);
+    box-shadow: 2px 2px 5px var(--dark-background);
+
+}
+
+figcaption {
+    font-size: .9em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5%;
+    height: 100px;
+}
+
+#profile {
+    font-size: 1.9em;
+    margin-right: 45px;
+    text-align: left;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: repeat(5, 0fr);
+    transition: all 0.5s ease-out;
+}
+
+nav.show {
+    grid-template-rows: repeat(5, 1fr);
+}
+
+nav a {
+    overflow: hidden;
+    color: var(--third-color);
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    font-size: 1.2em;
+    padding: 0px;
+    transition: padding 0.5s ease-out;
+}
+
+nav.show a {
+    padding: 8px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: #eeeeee;
+}
+
+
+#hamb-icon,
+#x-icon {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    font-size: 44px;
+    cursor: pointer;
+}
+
+#hamb-icon {
+    top: 10px;
+    right: 10px;
+}
+
+#x-icon {
+    top: 10px;
+    right: 10px;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle.show {
+    display: block;
+}
+
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 2rem;
+}
+
+.filter-buttons button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Course boxes a */
+.course-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.course-boxes div {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--third-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

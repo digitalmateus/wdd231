@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="My Chamber of Commerce Page">
     <meta property="og:description" content="Welcome to the Chamber of Commerce page. Discover local businesses, events, and resources.">
@@ -19,22 +20,24 @@
 
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h1 class="name">Mateus Nunes</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#Chamber">Chamber</a></li>
-                <li><a href="#Final">Final</a></li>
-                <li><a href="#GitProfile">GitHub Profile</a></li>
-                <li><a href="#LinkedIn">LinkedIn</a></li>
-            </ul>
+        <div id="banner">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <span id="profile"> Mateus Nunes</span>
+        </div>
+        <div id="hamb-icon" class="toggle show">|||</div>
+        <div id="x-icon" class="toggle">X</div>
+        <nav id="navBar">  
+            <a href="#home" clas="active">Home</a>
+            <a href="#Chamber">Chamber</a>
+            <a href="#Final">Final</a>
+            <a href="#GitProfile">GitHub Profile</a>
+            <a href="#LinkedIn">LinkedIn</a>
         </nav>
     </header>
 
     <main>
-        <h1 class="course-title">Home</h1>
-        <div class="upper-content">
+        <h1>Home</h1>
+        <div id="sections">
             <section id="course-work">
                 <h2>Course Work</h2>
                 <ul>
@@ -44,31 +47,30 @@
                 </ul>
             </section>
 
-            <section id="mycity">
+            <section>
                 <h2>Sorocaba, Brazil</h2>
                 <figure>
                     <img src="images/sorocaba.jpeg" alt="Sorocaba" class="city-pic">
                     <figcaption>Sorocaba, Brazil</figcaption>
                 </figure>
             </section>
-        </div>
-
-        <section id="course">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="filter-buttons">
-                <button id="btn-all">All</button>
-                <button id="btn-cse">CSE</button>
-                <button id="btn-wdd">WDD</button>
-            </div>
-            <div class="course-boxes">
-                <div class="cse110" id="cse110">CSE 110</div>
-                <div class="wdd130" id="wdd130">WDD 130</div>
-                <div class="cse111" id="cse111">CSE 111</div>
-                <div class="cse210" id="cse210">CSE 210</div>
-                <div class="wdd131" id="wdd131">WDD 131</div>
-                <div class="wdd231" id="wdd231">WDD 231</div>
-            </div>
-        </section>    
+            <section id="courses-list">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="filter-buttons">
+                    <button id="btn-all">All</button>
+                    <button id="btn-cse">CSE</button>
+                    <button id="btn-wdd">WDD</button>
+                </div>
+                <div class="course-boxes">
+                    <div class="cse110" id="cse110">CSE 110</div>
+                    <div class="wdd130" id="wdd130">WDD 130</div>
+                    <div class="cse111" id="cse111">CSE 111</div>
+                    <div class="cse210" id="cse210">CSE 210</div>
+                    <div class="wdd131" id="wdd131">WDD 131</div>
+                    <div class="wdd231" id="wdd231">WDD 231</div>
+                </div>
+            </section>
+        </div>    
     </main>
 
     <footer>
