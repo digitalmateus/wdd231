@@ -1,0 +1,14 @@
+@media screen and (min-width: 850px) {
+
+
+
+    .profile-pic {
+        border-radius: 1rem;
+        width: 11%;
+        margin-top: 2rem;
+        margin-left: 4rem;
+        display: absolute;
+        float: left;
+    }
+
+}
