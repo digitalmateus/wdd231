@@ -1,0 +1,24 @@
+{
+  "family_name": "Nunes",
+  "move_in_date": "2022-06-10",
+  "number_of_people": 3,
+  "visited_by_bishopric": true,
+  "family_members": [
+    
+    {
+      "name": "Mateus Nunes",
+      "gender": "Male",
+      "birthdate": "1978-09-21"
+    },
+    {
+      "name": "Laura Nunes",
+      "gender": "Female",
+      "birthdate": "1987-05-06"
+    },
+    {
+      "name": "Valentina Nunes",
+      "gender": "Female",
+      "birthdate": "2015-06-18"
+    }
+  ]
+}

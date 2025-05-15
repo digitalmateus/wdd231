@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cards-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  background-color: #f0f0f8;
+  text-align: center;
+}
+
+#cards {
+
+}
+
+.cards-container img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.cards h2 {
+  color: #4c3f91;
+  margin: 0 0 8px;
+}
