@@ -1,0 +1,135 @@
+@media screen and (min-width: 721px) {
+
+  :root {
+    /* max-width: 1200px; */
+    font-size: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  body {
+   background-color: var(--light-gray);
+   max-width: 1200px;
+   margin: 0 auto;
+   
+  }
+
+  header, footer {
+    padding: 2em 6em;
+  }
+
+  .my-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: auto;
+    flex-direction: column;
+    text-align: right;
+    justify-content: right;
+    gap: 2.5em;
+    margin-top: 25px;
+    min-height: 100px;
+  }
+
+  #main-logo {
+    margin-bottom: 0;
+    margin-right: 1em;
+    margin-top: 10px;
+    width: 80px;
+    position: absolute;
+  }
+
+  #chamber-name {
+    font-size: 1.5em;
+  }
+
+  #chamber-description {
+    font-size: 0.8em;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    background: none;
+    grid-template-rows: none;
+  }
+
+  #navBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    width:auto;
+  }
+
+  nav a {
+    font-size: 1em;
+    padding: 10px 25px;
+  }
+
+  #hamb-icon,
+  #x-icon {
+    visibility: hidden;
+}
+
+  .hero {
+    width: 100%;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    display: grid;
+    justify-items: center;
+
+  }
+
+
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-content p {
+    font-size: 1.2em;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2em;
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em;
+    
+  }
+
+  section {
+    padding: 2em;
+    margin: 0.5em;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    
+  }
+
+  section h4 {
+    font-size: 1.2em;
+  }
+
+  section p {
+    font-size: 0.8em;
+  }
+
+  #local-info, #general-info {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+  }
+
+  #logo-orange {
+    width: 40px;
+  }
+}

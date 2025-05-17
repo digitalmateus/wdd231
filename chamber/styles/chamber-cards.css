@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.cards-container section {
+    background-color: #e4ecfd;
+    line-height: 0.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.cards-container img {
+  height: 120px;
+  width: 120px;
+  border-radius: 20%;
+}

@@ -1,0 +1,68 @@
+{
+  "companies": [
+    {
+      "compname": "Maxima Travel",
+      "address": "Armando Pannunzio 1893",
+      "phone": "15997041806",
+      "web": "maximatravel.com.br",
+      "membership": "GOLD",
+      "industry": "Travel",
+      "imageurl": "./images/maxima-logo.jpeg"
+    },
+    
+     {
+    "compname": "Lume Digital",
+    "address": "Rua das Acácias 320",
+    "phone": "11992345678",
+    "web": "lumedigital.com.br",
+    "membership": "SILVER",
+    "industry": "Marketing",
+    "imageurl": "./images/lume-logo.jpeg"
+  },
+  {
+    "compname": "EcoVerde Soluções",
+    "address": "Avenida das Nações 1500",
+    "phone": "21988447766",
+    "web": "ecoverde.com",
+    "membership": "GOLD",
+    "industry": "Sustainability",
+    "imageurl": "./images/ecoverde-logo.jpeg"
+  },
+  {
+    "compname": "Clínica VitaBem",
+    "address": "Rua dos Médicos 45",
+    "phone": "31998761234",
+    "web": "vitabemclinica.com.br",
+    "membership": "BRONZE",
+    "industry": "Healthcare",
+    "imageurl": "./images/vitabem-logo.jpeg"
+  },
+  {
+    "compname": "Nexon Tech",
+    "address": "Av. Paulista 2001",
+    "phone": "11981112233",
+    "web": "nexontech.com",
+    "membership": "PLATINUM",
+    "industry": "Technology",
+    "imageurl": "./images/nexontech-logo.jpeg"
+  },
+  {
+    "compname": "Casa & Conforto",
+    "address": "Rua do Comércio 89",
+    "phone": "47988117755",
+    "web": "casaeconforto.com.br",
+    "membership": "SILVER",
+    "industry": "Home & Decor",
+    "imageurl": "./images/casaeconforto-logo.jpeg"
+  },
+  {
+    "compname": "Alpha Idiomas",
+    "address": "Rua das Letras 456",
+    "phone": "31999001234",
+    "web": "alphaidiomas.com.br",
+    "membership": "GOLD",
+    "industry": "Education",
+    "imageurl": "./images/alphaidiomas-logo.jpeg"
+  }
+    ]
+}

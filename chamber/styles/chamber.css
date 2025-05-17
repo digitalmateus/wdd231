@@ -1,0 +1,226 @@
+:root {
+    --primary-darkblue: rgb(8, 79, 97);
+    --secondary-blue: rgb(71, 135, 161);
+    --third-light-green: rgb(43, 225, 155);
+    --alternate-orange: rgb(224, 74, 43);
+    --text-color: rgb(50, 50, 50);
+    --light-gray: rgb(211, 211, 211);
+    --font-size: 16px;
+     font-family: 'open-sans', sans-serif;
+     min-width: 320px;
+     max-width: 650px;
+}
+
+header, footer {
+    background-color: var(--primary-darkblue);
+    padding: 3em;
+}
+
+body {
+    background-color: var(--light-gray);
+    margin: 0;
+}
+
+.my-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-logo {
+    margin-bottom: 5px;
+}
+
+#chamber-name {
+    font-size: 20px;
+    color: var(--light-gray);
+    
+}
+
+#chamber-description {
+    font-size: 10px;
+    color: var(--light-gray);
+    
+}
+
+/* ------------ nav settings -------- */
+
+nav {
+    display: grid;
+    grid-template-rows: repeat(4, 0fr);
+    transition: all 0.5s ease-out;
+    padding-top: 15px;
+}
+
+nav.show {
+    grid-template-rows: repeat(4, 1fr);
+}
+
+nav a {
+    overflow: hidden;
+    color: var(--light-gray);
+    text-decoration: none;
+    background-color: var(--alternate-orange);
+    font-size: 1em;
+    padding: 0px;
+    transition: padding 0.5s ease-out;
+    text-align: center;
+}
+
+nav.show a {
+    padding: 12px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: var(--secondary-blue);
+    color: var(--primary-darkblue);
+    font-weight: 700;
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: #eeeeee;
+}
+
+
+
+
+/* ---------- hamburger icon --------*/
+
+
+#hamb-icon,
+#x-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--alternate-orange);
+}
+
+#hamb-icon {
+    top: 10px;
+    right: 10px;
+    color: var(--third-light-green);
+}
+
+#x-icon {
+    top: 10px;
+    right: 10px;
+    color: :var(var(--alternate-orange));
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle.show {
+    display: block;
+}
+
+
+/* ------------ hero settings -------- */
+
+.hero {
+    background-image: url("/chamber/images/sorocaba-banner.jpg");
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 42, 42, 0.486);
+  z-index: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  align-content: center;
+  z-index: 2;
+  color: var(--light-gray);
+  padding-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.hero-content p {
+    font-size: 10px;
+}
+
+.hero-content a {
+    margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2px;
+  margin-bottom: 30px;
+  padding: 12px 24px;
+  background-color: var(--alternate-orange);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+section {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 0.5em;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+section h4 {
+    color: var(--primary-darkblue);
+}
+
+section p {
+    color: var(--text-color);
+    font-size: 10px;
+}
+
+#local-info p, h5 {
+    text-align: center;
+    color: var(--light-gray);
+}
+
+#general-info p {
+    text-align: center;
+    color: var(--light-gray);
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: var(--light-gray);
+
+}
+
+#instagram, #facebook {
+    width: 35px;
+}
+
+#logo-orange {
+    width: 25px;
+}

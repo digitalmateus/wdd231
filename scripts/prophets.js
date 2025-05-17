@@ -22,8 +22,8 @@ const displayProphets = (prophets) => {
     portrait.setAttribute('src', prophet.imageurl);
     portrait.setAttribute('alt', `Portrait of ${fullName}`);
     portrait.setAttribute('loading', 'lazy');
-    portrait.setAttribute('width', '340');
-    portrait.setAttribute('height', '440');
+    portrait.setAttribute('width', '100');
+    portrait.setAttribute('height', '100');
 
     // Append the section(card) with the created elements
     card.appendChild(fullName);
