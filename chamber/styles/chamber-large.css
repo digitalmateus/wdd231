@@ -110,7 +110,6 @@
     padding: 2em;
     margin: 0.5em;
     border-radius: 10px;
-    background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     
   }
@@ -123,13 +122,12 @@
     font-size: 0.8em;
   }
 
-  #local-info, #general-info {
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
-  }
-
   #logo-orange {
     width: 40px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
