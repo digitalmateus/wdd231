@@ -26,10 +26,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: normal;
 }
 
-#main-logo {
+.main-logo {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 5px;
+    align-items: center;
 }
 
 #chamber-name {
@@ -126,10 +130,12 @@ nav a.active {
 .hero {
     background-image: url("/chamber/images/sorocaba-banner.jpg");
     background-position: center;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     text-align: center;
     position: relative;
+    height: 300px;
+    
 }
 
 .hero::after {
@@ -143,34 +149,34 @@ nav a.active {
 }
 
 .hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content:center;
   align-items: center;
   position: relative;
   align-content: center;
   z-index: 2;
   color: var(--light-gray);
-  padding-bottom: 20px;
 }
 
 .hero-content h1 {
     font-size: 25px;
-    margin-top: 30px;
+   
 }
 
 .hero-content p {
-    font-size: 10px;
+    font-size: 9px;
+    align-content: center;
 }
 
 .hero-content a {
-    margin: 0;
+   width: 100px;
+
 }
 
 .btn {
   display: inline-block;
-  margin-top: 2px;
-  margin-bottom: 30px;
   padding: 12px 24px;
   background-color: var(--alternate-orange);
   color: white;
@@ -223,4 +229,15 @@ section p {
 
 #logo-orange {
     width: 25px;
+}
+
+
+.main-info {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--light-gray);
 }
