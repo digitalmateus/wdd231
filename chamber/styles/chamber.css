@@ -128,7 +128,7 @@ nav a.active {
 /* ------------ hero settings -------- */
 
 .hero {
-    background-image: url("./chamber/images/sorocaba-banner.jpg");
+    background-image: url("images/sorocaba-banner.jpg");
     background-position: center;
     justify-content:center;
     align-items: center;
