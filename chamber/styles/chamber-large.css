@@ -90,7 +90,7 @@
   }
 
   .hero {
-    background-image: url("./images/sorocaba-banner.jpg");
+    background-image: url("/chamber/images/sorocaba-banner-large.jpeg");
     width: 100%;
     min-height: 350px;
     background-size: cover;
