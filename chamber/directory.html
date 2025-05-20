@@ -1,75 +1,78 @@
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce | Sorocaba - SP</title>
-    <meta name="description" content="Welcome to the Chamber of Commerce of Sorocaba. Discover local businesses, events, and resources.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/chamber.css">
-    <link rel="stylesheet" href="styles/chamber-large.css">
-    <link rel="stylesheet" href="styles/chamber-cards.css">
-    <script src="scripts/script.js" defer></script>
-    <script src="scripts/menu.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
-    <link rel="icon" href="favicon.ico">
-    <meta property="og:title" content="Chamber of Commerce Page for Sorocaba">
-    <meta property="og:description" content="Welcome to the Chamber of Commerce of Sorocaba. Discover local businesses, events, and resources.">
-    <meta property="og:image" content="images/sorocaba-banner.jpg">
-    <meta property="og:url" content="https://digitalmateus.GitHub.io/wdd231/chamber/directory.html">
-</head>
+<!DOCTYPE html>
+    <html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mateus Nunes">
+        <title>Chamber of Commerce | Sorocaba - SP</title>
+        <meta name="description" content="Welcome to the Chamber of Commerce of Sorocaba. Discover local businesses, events, and resources.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/chamber.css">
+        <link rel="stylesheet" href="styles/chamber-large.css">
+        <link rel="stylesheet" href="styles/chamber-cards.css">
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/menu.js" defer></script>
+        <script src="scripts/directory.js" defer></script>
+        <link rel="icon" href="favicon.ico">
+        <meta property="og:title" content="Chamber of Commerce Page for Sorocaba">
+        <meta property="og:description" content="Welcome to the Chamber of Commerce of Sorocaba. Discover local businesses, events, and resources.">
+        <meta property="og:image" content="https://digitalmateus.GitHub.io/wdd231/chamber/images/sorocaba-banner.jpg">
+        <meta property="og:url" content="https://digitalmateus.GitHub.io/wdd231/chamber/directory.html">
+    </head>
 
-<body>
-    <header>
-        <div class="top-row">
-            <div class="main-logo">
-                <img src="images/chamber-logo-white.png" alt="Chamber Logo" id="main-logo">
+    <body>
+        <header>
+            <div class="top-row">
+                <div class="main-logo">
+                    <img src="images/chamber-logo-white.png" alt="Chamber Logo" id="main-logo">
+                </div>
+                <div class="my-header">
+                    <span id="chamber-name">Sorocaba</span>
+                    <span id="chamber-description">Chamber of Commerce</span>
+                </div>
             </div>
-            <div class="my-header">
-                <span id="chamber-name">Sorocaba</span>
-                <span id="chamber-description">Chamber of Commerce</span>
+
+            <div id="hamb-icon" class="toggle show">|||</div>
+            <div id="x-icon" class="toggle">X</div>
+
+            <nav id="navBar">  
+                <a href="/chamber/index.html" clas="active">Home</a>
+                <a href="/chamber/directory.html">Directory</a>
+                <a href="#Join">Join</a>
+                <a href="#Discover">Discover</a>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Sorocaba</h1>
+                    <p>Discover local businesses, events, and resources.<p>
+                    <a href="#join" class="btn">Join Now</a>
+                </div>
             </div>
-        </div>
 
-        <div id="hamb-icon" class="toggle show">|||</div>
-        <div id="x-icon" class="toggle">X</div>
+            <div class="cards-container" id="cards"></div>
 
-        <nav id="navBar">  
-            <a href="/chamber/index.html" clas="active">Home</a>
-            <a href="/chamber/directory.html">Directory</a>
-            <a href="#Join">Join</a>
-            <a href="#Discover">Discover</a>
-        </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Sorocaba</h1>
-                <p>Discover local businesses, events, and resources.<p>
-                <a href="#join" class="btn">Join Now</a>
-            </div>
-        </div>
+        </main>
 
-        <div class="cards-container" id="cards"></div>
-
-    </main>
-
-    <footer>
-        <section id="local-info">
-            <img src="images/chamber-logo-orange.png" id="logo-orange" alt="logo orange">
-            <h5>Sorocaba CoC</h5>
-            <p>Address goes here</p>
-            <p>999 999 999</p>
-        </section>
-         <section id="social-media">
-            <img src="images/instagram-white-icon-256.png" id="instagram" alt="instagram icon">
-            <img src="images/facebook-white-icon-256.png" id ="facebook" alt="facebook icon">
-        </section>
-        <section id="general-info">
-            <p>&copy; <span id="currentYear"></span> Mateus Nunes | Brazil</p>
-            <p> Last updated <span id="lastModified"></span></p>
-        </section>
-       
-</body>
+        <footer>
+            <section id="local-info">
+                <img src="images/chamber-logo-orange.png" id="logo-orange" alt="logo orange">
+                <h5>Sorocaba CoC</h5>
+                <p>Address goes here</p>
+                <p>999 999 999</p>
+            </section>
+            <section id="social-media">
+                <img src="images/ig-white-icon-256.png" id="instagram" alt="instagram icon">
+                <img src="images/fb-white-icon-256.png" id ="facebook" alt="facebook icon">
+            </section>
+            <section id="general-info">
+                <p>&copy; <span id="currentYear"></span> Mateus Nunes | Brazil</p>
+                <p> Last updated <span id="lastModified"></span></p>
+            </section>
+        
+    </body>
+</html>
