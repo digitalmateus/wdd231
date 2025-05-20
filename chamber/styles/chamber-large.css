@@ -20,9 +20,7 @@
   }
 
   header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
     padding: 1rem;
     color: white;
     justify-content: center;
