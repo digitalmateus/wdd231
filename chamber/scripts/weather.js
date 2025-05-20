@@ -5,7 +5,7 @@ async function getWeather() {
         const response = await fetch(wurl);
         if (!response.ok) throw new Error('No response from the network');
         const data = await response.json();
-        console.log(data); // Para depurar
+        console.log(data); 
         displayWeather(data.current_weather);
     } catch (error) {
         console.error('weather fetch error: ', error);

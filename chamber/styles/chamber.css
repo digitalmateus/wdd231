@@ -113,7 +113,7 @@ nav a.active {
 #x-icon {
     top: 10px;
     right: 10px;
-    color: :var(var(--alternate-orange));
+    color:var(--alternate-orange);
 }
 
 .toggle {
@@ -234,10 +234,112 @@ section p {
 
 .main-info {
     display: grid;
-    grid-template-rows: auto;
-    padding: 10px;
+    grid-template-columns: auto;
+    padding: 20px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     background-color: var(--light-gray);
+    
+}
+
+.main-info h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--light-gray);
+    background-color: var(--alternate-orange);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 0;
+}
+
+.events {
+    background-color: rgb(226, 228, 227);
+    min-width: 350px;
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+.events h3 {
+    background-color: var(--alternate-orange);
+    margin-left: -20px ;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.weather {
+    line-height: 0.5em;
+    background-color: rgb(226, 228, 227);
+    min-width: 350px;
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+.weather h3 {
+    background-color: var(--alternate-orange);
+    margin-left: -20px ;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.events h3 {
+    background-color: var(--alternate-orange);
+    margin-left: -20px ;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.forecast h3 {
+    background-color: var(--alternate-orange);
+    margin-left: -20px ;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.forecast {
+    line-height: 0.5em;
+    background-color: rgb(226, 228, 227);
+    min-width: 350px;
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+.featured {
+    background-color: rgb(226, 228, 227);
+    min-width: 350px;
+}
+
+.featured h3 {
+    background-color: var(--primary-darkblue);
+    color: var(--light-gray);
+    text-align: center;
+    padding: 20px;
+}
+
+#spotlight {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#spotlight section {
+    border: 1px solid #c7c3c3f1;
+    padding: 15px; 
+    min-width: 350px;
+    justify-content: center;
+    background-color: #f9f9f9;
+    
+}
+
+#spotlight img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
