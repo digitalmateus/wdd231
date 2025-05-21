@@ -13,7 +13,7 @@
 
 header, footer {
     background-color: var(--primary-darkblue);
-    padding: 3em;
+    padding: 2em;
 }
 
 body {
@@ -85,7 +85,8 @@ nav a:hover {
 
 nav a.active {
     font-weight: bold;
-    background-color: #eeeeee;
+    background-color: var(--secondary-blue);
+    color: var(--primary-darkblue);
 }
 
 
@@ -128,7 +129,7 @@ nav a.active {
 /* ------------ hero settings -------- */
 
 .hero {
-    background-image: url("/chamber/images/sorocaba-banner.jpg");
+    background-image: url("../images/sor-banner.webp");
     background-position: center;
     justify-content:center;
     align-items: center;
@@ -224,11 +225,11 @@ section p {
 }
 
 #instagram, #facebook {
-    width: 35px;
+    width: 50px;
 }
 
 #logo-orange {
-    width: 25px;
+    width: 50px;
 }
 
 

@@ -38,7 +38,6 @@
   .main-logo img {
     height: 80px; 
     margin-top: 40px;
-    align-self: left;
   }
 
   .my-header {
@@ -90,7 +89,7 @@
   }
 
   .hero {
-    background-image: url("/chamber/images/sorocaba-banner-large.jpeg");
+    background-image: url("../images/sor-banner-large.webp");
     width: 100%;
     min-height: 350px;
     background-size: cover;
@@ -100,7 +99,6 @@
   .hero-content {
     display: grid;
     justify-items: center;
-
   }
 
 

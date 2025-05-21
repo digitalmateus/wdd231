@@ -32,8 +32,8 @@ const displayCompanies = (companies) => {
         logo.setAttribute('src', company.imageurl);
         logo.setAttribute('alt', `logo of ${company.name}`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '340');
-        logo.setAttribute('height', '440');
+        logo.setAttribute('width', '350');
+        logo.setAttribute('height', '350');
 
         // Append children
         card.appendChild(logo);
