@@ -13,7 +13,7 @@
 
 header, footer {
     background-color: var(--primary-darkblue);
-    padding: 2em;
+    padding: 1em 1em;
 }
 
 body {
@@ -81,12 +81,14 @@ nav a:hover {
     background-color: var(--secondary-blue);
     color: var(--primary-darkblue);
     font-weight: 700;
+    border: 1px solid var(--light-gray);
 }
 
 nav a.active {
     font-weight: bold;
-    background-color: var(--secondary-blue);
-    color: var(--primary-darkblue);
+    background-color: rgb(36, 35, 35);
+    color: var(--light-gray);
+    
 }
 
 
@@ -108,13 +110,13 @@ nav a.active {
 #hamb-icon {
     top: 10px;
     right: 10px;
-    color: var(--third-light-green);
+    color: var(--light-gray);
 }
 
 #x-icon {
     top: 10px;
     right: 10px;
-    color:var(--alternate-orange);
+    color:var(--light-gray);
 }
 
 .toggle {

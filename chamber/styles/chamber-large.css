@@ -16,7 +16,7 @@
 
   header, footer {
     background-color: var(--primary-darkblue);
-    padding: 2em 6em;
+    padding: 1em 1em;
   }
 
   header {
