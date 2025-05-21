@@ -2,9 +2,9 @@
     --primary-darkblue: rgb(8, 79, 97);
     --secondary-blue: rgb(71, 135, 161);
     --third-light-green: rgb(43, 225, 155);
-    --alternate-orange: rgb(224, 74, 43);
+    --alternate-orange: rgb(151, 49, 29);
     --text-color: rgb(50, 50, 50);
-    --light-gray: rgb(211, 211, 211);
+    --light-gray: rgb(250, 250, 250);
     --font-size: 16px;
      font-family: 'open-sans', sans-serif;
      min-width: 320px;
@@ -104,7 +104,7 @@ nav a.active {
     height: 30px;
     font-size: 30px;
     cursor: pointer;
-    color: var(--alternate-orange);
+    color: var(--light-gray);
 }
 
 #hamb-icon {
