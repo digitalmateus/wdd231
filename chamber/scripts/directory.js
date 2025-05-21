@@ -46,4 +46,15 @@ const displayCompanies = (companies) => {
 
         cards.appendChild(card);
     });
+
+    const gridBtn = document.getElementById('gridBtn');
+    const listBtn = document.getElementById('listBtn');
+
+    gridBtn.addEventListener('click', () => {
+    cards.classList.remove('list-view');
+    });
+
+    listBtn.addEventListener('click', () => {
+    cards.classList.add('list-view');
+    });
 }
