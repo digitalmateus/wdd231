@@ -1,4 +1,5 @@
-const wurl = 'https://api.open-meteo.com/v1/forecast?latitude=23.4709&longitude=47.4851&current_weather=true&timezone=America%2FSao_Paulo';
+const wurl = 'https://api.openweathermap.org/data/2.5/weather?lat=23.4709&lon=47.4851&appid=aed622ddfc27cdae97a70191d9919090&units=metric';
+
 
 async function getWeather() {
     try {
@@ -6,7 +7,7 @@ async function getWeather() {
         if (!response.ok) throw new Error('No response from the network');
         const data = await response.json();
         console.log(data); 
-        displayWeather(data.current_weather);
+        displayWeather(data);
     } catch (error) {
         console.error('weather fetch error: ', error);
     }   
@@ -15,20 +16,39 @@ async function getWeather() {
 function displayWeather(data) {
     const weatherDiv = document.getElementById('weather');
     if (weatherDiv && data) {
-        const temp = document.createElement('p');
-        const wind = document.createElement('p');
-        const direction = document.createElement('p');
-        const code = document.createElement('p');
-
-        temp.textContent = `Temperature: ${data.temperature}°C`;
-        wind.textContent = `Windspeed: ${data.windspeed} km/h`;
-        direction.textContent = `Wind Direction: ${data.winddirection}°`;
-        code.textContent = `Weather Code: ${data.weathercode}`;
-
-        weatherDiv.appendChild(temp);
-        weatherDiv.appendChild(wind);
-        weatherDiv.appendChild(direction);
-        weatherDiv.appendChild(code);
+        // Clear previous content
+        weatherDiv.innerHTML = '';
+        // Temperature
+        if (data.main && typeof data.main.temp !== 'undefined') {
+            const temp = document.createElement('p');
+            temp.textContent = `Temperature: ${data.main.temp}°C`;
+            weatherDiv.appendChild(temp);
+        }
+        // Wind speed
+        if (data.wind && typeof data.wind.speed !== 'undefined') {
+            const wind = document.createElement('p');
+            wind.textContent = `Windspeed: ${data.wind.speed} m/s`;
+            weatherDiv.appendChild(wind);
+        }
+        // Wind direction
+        if (data.wind && typeof data.wind.deg !== 'undefined') {
+            const direction = document.createElement('p');
+            direction.textContent = `Wind Direction: ${data.wind.deg}°`;
+            weatherDiv.appendChild(direction);
+        }
+        // Weather description
+        if (data.weather && data.weather[0]) {
+            const desc = document.createElement('p');
+            desc.textContent = `Description: ${data.weather[0].description}`;
+            weatherDiv.appendChild(desc);
+            // Optional: Weather icon
+            if (data.weather[0].icon) {
+                const icon = document.createElement('img');
+                icon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+                icon.setAttribute('alt', data.weather[0].description);
+                weatherDiv.appendChild(icon);
+            }
+        }
     }
 }
 

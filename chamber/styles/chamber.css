@@ -84,12 +84,12 @@ nav a:hover {
     border: 1px solid var(--light-gray);
 }
 
-nav a.active {
+/* nav a.active {
     font-weight: bold;
     background-color: rgb(36, 35, 35);
-    color: var(--light-gray);
+    color: var(--light-gray); 
     
-}
+}*/
 
 
 
@@ -133,7 +133,6 @@ nav a.active {
 .hero {
     background-image: url("../images/sor-banner.webp");
     background-position: center;
-    justify-content:center;
     align-items: center;
     text-align: center;
     position: relative;
@@ -147,14 +146,13 @@ nav a.active {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(43, 42, 42, 0.486);
+  background-color: rgba(43, 42, 42, 0.795);
   z-index: 1;
 }
 
 .hero-content {
   padding-top: 50px;
   display: grid;
-  grid-template-columns: auto;
   justify-content:center;
   align-items: center;
   position: relative;
@@ -171,12 +169,13 @@ nav a.active {
 .hero-content p {
     font-size: 9px;
     align-content: center;
+    color: white;
+    background-color: var(--primary-darkblue);
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.hero-content a {
-   width: 100px;
-
-}
 
 .btn {
   display: inline-block;
@@ -186,6 +185,13 @@ nav a.active {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.view-toggle {
+    display: flex;
+    flex-direction: row;
+    margin:0 auto;
+    justify-content: center;
 }
 
 section {
@@ -204,7 +210,7 @@ section h4 {
 
 section p {
     color: var(--text-color);
-    font-size: 10px;
+    font-size: 15px;
 }
 
 /* List view */
@@ -226,12 +232,13 @@ section p {
 
 }
 
-#local-info p, h5 {
+#local-info p, h3 {
     text-align: center;
     color: var(--light-gray);
 }
 
 #general-info p {
+    font-size: 11px;
     text-align: center;
     color: var(--light-gray);
 }
@@ -247,6 +254,7 @@ section p {
 
 #instagram, #facebook {
     width: 50px;
+    height: 50px;
 }
 
 #logo-orange {
@@ -265,7 +273,7 @@ section p {
     
 }
 
-.main-info h3 {
+.main-info h2 {
     font-size: 20px;
     font-weight: 800;
     color: var(--light-gray);
@@ -282,7 +290,7 @@ section p {
     padding-left: 20px;
 }
 
-.events h3 {
+.events h2 {
     background-color: var(--alternate-orange);
     margin-left: -20px ;
     padding-left: 20px;
@@ -299,7 +307,7 @@ section p {
     padding-left: 20px;
 }
 
-.weather h3 {
+.weather h2 {
     background-color: var(--alternate-orange);
     margin-left: -20px ;
     padding-left: 20px;
@@ -307,7 +315,7 @@ section p {
     padding-top: 10px;
 }
 
-.events h3 {
+.events h2 {
     background-color: var(--alternate-orange);
     margin-left: -20px ;
     padding-left: 20px;
@@ -315,7 +323,7 @@ section p {
     padding-top: 10px;
 }
 
-.forecast h3 {
+.forecast h2 {
     background-color: var(--alternate-orange);
     margin-left: -20px ;
     padding-left: 20px;
@@ -336,7 +344,7 @@ section p {
     min-width: 350px;
 }
 
-.featured h3 {
+.featured h2 {
     background-color: var(--primary-darkblue);
     color: var(--light-gray);
     text-align: center;

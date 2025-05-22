@@ -112,7 +112,7 @@
 
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2em;
     max-width: 1200px;
     margin: 2em auto;
@@ -121,11 +121,10 @@
   }
 
   section {
-    padding: 2em;
+    padding: 0.5em;
     margin: 0.5em;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    
   }
 
   section h4 {
@@ -136,13 +135,18 @@
     font-size: 0.8em;
   }
 
+  
+
   #logo-orange {
     width: 40px;
+    height: 40px;
   }
 
   .main-info {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
     background-color: var(--light-gray);
       
   }
@@ -151,13 +155,24 @@
     display: flex;
     flex-direction: column;
     background-color: var(--light-gray);
+    
   }
 
   #spotlight {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+#spotlight section {
+  max-width: 350px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
   footer {
   display: grid;
