@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="styles/large.css">
 
   <script src="script/scripts.js" defer></script>
+  <script src="script/script.js" defer></script>
+  <script src="script/search.js" defer></script>
 
   <link rel="icon" href="../favicon.ico">
 
@@ -47,20 +49,42 @@
 
 
   <main>
-    <section class="hero">
-      <h2>Your Project Hero Section</h2>
-      <p>This is a great place to introduce your project and its main value proposition.</p>
-      <a href="#" class="btn">Get Started</a>
-    </section>
-    <section>
-      <h2>About This Project</h2>
-      <p>Describe the purpose, features, and technologies used in your project.</p>
-    </section>
-    <section>
-      <h2>Contact</h2>
-      <p>Have questions? <a href="mailto:your@email.com">Email us</a>.</p>
-    </section>
+    <div class="search">
+      <form id="flightForm">
+      <label for="departure">From*:
+        <input type="text" id="departure" name="departure" placeholder="City of departure" required>
+        <ul id="departureSuggestions" class="suggestions"></ul>
+      </label>
+
+      <label for="arrival">To*:
+        <input type="text" id="arrival" name="arrival" placeholder="City of arrival" required>
+        <ul id="arrivalSuggestions" class="suggestions"></ul>
+      </label>
+
+      <label for="departureDate">Departure Date*:
+        <input type="date" id="departureDate" name="departureDate" required>
+      </label>
+      
+      <label for="returnDate">Return Date:
+        <input type="date" id="returnDate" name="returnDate">
+      </label>
+
+      <label for="oneWay" id="oneWayLabel">
+        <input type="checkbox" id="oneWay" name="oneWay">
+        One-way ticket
+      </label>
+
+      <button type="submit">Search Flights</button>
+    </div>
+
+    <div id="results">
+
+    </div>
+
+  </form>
+    
   </main>
+
   <footer>
     <p>&copy; <span id="currentYear"></span> Your Name | Final Project</p>
     <p>Last updated <span id="lastModified"></span></p>

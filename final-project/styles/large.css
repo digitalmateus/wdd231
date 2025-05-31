@@ -20,4 +20,61 @@
     nav {
         grid-template-rows: 1fr;
     }
+
+    /*  ----------------- search ------------------  */
+
+    .search {
+        display: flex;
+        background-color: rgb(194, 216, 216);
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .search form {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .search #oneWayLabel {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .search button {
+        height: 60px;
+        width: 220px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        background-color: cornflowerblue;
+        border-radius: 10px;
+        border: 0;
+     }
+     
+     .search button:hover {
+        height: 60px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        background-color: rgb(34, 50, 80);
+        border-radius: 10px;
+        color: white;
+    }
+
+    .search label {
+        display: flex;
+        flex-direction: column;
+    }
+    .search input {
+        height: 60px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
 }
+
