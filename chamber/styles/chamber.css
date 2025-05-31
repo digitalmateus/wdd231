@@ -526,7 +526,6 @@ dialog::backdrop {
 
 #non-profit:hover {
     animation: pulse none;
-    transform: translate(0, 0) scale (1); /* back to original size smoothly */
     background-color: var(--primary-darkblue);
     color: var(--light-gray);
 }
@@ -547,7 +546,6 @@ dialog::backdrop {
 
 #gold-plan:hover {
     animation: pulse none;
-    transform: translate(0, 0) scale (1); /* back to original size smoothly */
     background-color: var(--primary-darkblue);
     color: var(--light-gray);
 }
@@ -568,7 +566,6 @@ dialog::backdrop {
 
 #silver-plan:hover {
     animation: pulse none;
-    transform: translate(0, 0) scale (1); /* back to original size smoothly */
     background-color: var(--primary-darkblue);
     color: var(--light-gray);
 }
@@ -589,7 +586,6 @@ dialog::backdrop {
 
 #bronze-plan:hover {
     animation: pulse none;
-    transform: translate(0, 0) scale (1); /* back to original size smoothly */
     background-color: var(--primary-darkblue);
     color: var(--light-gray);
 }
