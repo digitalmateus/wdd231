@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+header {
+background-color: rgb(25, 42, 50);
+  display: grid;
+  align-items: center;
+  justify-content:safe;
+  padding: 10px;
+}
+
+.brand {
+  display: grid;
+   grid-template-columns: 44px auto 44px;
+  align-items: center;  
+  padding: 20px;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
+  margin-left: 10px;
+}
+
+/*  ----------------- NAV ------------------  */
+
+
+#myButton::before {
+    content: "\2630";
+    font-size: medium;
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .75rem 2vw;
+}
+
+.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+li.current-menu-item a{
+    background-color: rgba(0,0,0,0.2);
+}
+
+ul.menuLinks {
+    /* display: none; */
+    list-style-type: none;
+}
+
+#myButton.open::before {
+    content: "close";
+}
+
+ul.menuLinks.open {
+    /* display: block; */
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    background-color: rgb(0, 58, 85);
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}

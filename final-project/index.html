@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mateus Nunes">
+  <title>Maxima Travel Agency</title>
+  <meta name="description" content="Welcome to Maxima Travel Home Page.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="script/scripts.js" defer></script>
+
+  <link rel="icon" href="../favicon.ico">
+
+  <!-- <script src="scripts/script.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
+    
+  <meta property="og:title" content="Chamber of Commerce Page for Sorocaba">
+  <meta property="og:description" content="Welcome to the Chamber of Commerce of Sorocaba. Discover local businesses, events, and resources.">
+  <meta property="og:image" content="https://digitalmateus.github.io/wdd231/chamber/images/sor-banner.webp">
+  <meta property="og:url" content="https://digitalmateus.github.io/wdd231/chamber/directory.html"> -->
+
+
+</head>
+<body>
+  <header>
+    <div class="brand">
+        <img src="images/maxima-logo.png" alt="Company Logo" class="logo">
+        <span class="company-name">Maxima Travel</span>
+        <button id="myButton"></button>
+    </div>
+    <nav id="animate-menu">
+      <ul class="menuLinks">
+        <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li>
+        <li><a href="#" title="About">About</a></li>
+        <li><a href="#" title="Features">Features</a></li>
+        <li><a href="#" title="Contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+
+  <main>
+    <section class="hero">
+      <h2>Your Project Hero Section</h2>
+      <p>This is a great place to introduce your project and its main value proposition.</p>
+      <a href="#" class="btn">Get Started</a>
+    </section>
+    <section>
+      <h2>About This Project</h2>
+      <p>Describe the purpose, features, and technologies used in your project.</p>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>Have questions? <a href="mailto:your@email.com">Email us</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Your Name | Final Project</p>
+    <p>Last updated <span id="lastModified"></span></p>
+  </footer>
+  <script>
+    // Simple script to update year and last modified
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mateus Nunes">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+        
+    <link rel="icon" href="favicon.ico">
+    <title>Thank You</title>
+
+</head>
+<body class="thankyou">
+  <h1>Thank You!</h1>
+  <p>Your submission has been received.</p>
+
+  <ul>
+    <li><strong>First Name:</strong> <span id="firstName"></span></li>
+    <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+    <li><strong>Ocupation:</strong> <span id="Occupation"></span></li>
+    <li><strong>Email:</strong> <span id="email"></span></li>
+    <li><strong>Mobile Number:</strong> <span id="mobile"></span></li>
+    <li><strong>Business Name:</strong> <span id="organization"></span></li>
+    <li><strong>Member Level:</strong> <span id="membershipLevel"></span></li>
+    <li><strong>Organization Description:</strong> <span id="orgDescription"></span></li>
+    <li><strong>Date and time:</strong> <span id="timestamp"></span></li>
+  </ul>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    document.getElementById("firstName").textContent = params.get("firstName") || "Not provided";
+    document.getElementById("lastName").textContent = params.get("lastName") || "Not provided";
+    document.getElementById("Occupation").textContent = params.get("Occupation") || "Not provided";
+    document.getElementById("email").textContent = params.get("email") || "Not provided";
+    document.getElementById("mobile").textContent = params.get("mobile") || "Not provided";
+    document.getElementById("organization").textContent = params.get("organization") || "Not provided";
+    document.getElementById("membershipLevel").textContent = params.get("membershipLevel") || "Not provided";
+    document.getElementById("orgDescription").textContent = params.get("orgDescription") || "Not provided";
+    document.getElementById("timestamp").textContent = params.get("timestamp") || "Not provided";
+  </script>
+
+</body>
+</html>

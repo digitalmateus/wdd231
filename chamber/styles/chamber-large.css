@@ -1,9 +1,11 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 @media screen and (min-width: 721px) {
 
   :root {
-    /* max-width: 1200px; */
     font-size: 16px;
-    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -11,8 +13,7 @@
    background-color: var(--light-gray);
    max-width: 1200px;
    margin: 0 auto;
-   
-  }
+}
 
   header, footer {
     background-color: var(--primary-darkblue);
@@ -24,13 +25,14 @@
     padding: 1rem;
     color: white;
     justify-content: center;
+    width: 100%;
   }
 
   .top-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100vh;
+    width: 100%;
     margin: 0 auto;
     gap: 30px;
   }
@@ -68,14 +70,14 @@
     align-items: center;
     padding-top: 0;
     background: none;
-    grid-template-rows: none;
   }
 
   #navBar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 40px;
-    width:auto;
+    max-width:max-content;
+    justify-self: center;
   }
 
   nav a {
@@ -86,6 +88,15 @@
   #hamb-icon,
   #x-icon {
     visibility: hidden;
+  }
+
+  .home-main {
+    display: grid;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: stretch;
   }
 
   .hero {
@@ -136,19 +147,26 @@
   }
 
   
-
   #logo-orange {
     width: 40px;
     height: 40px;
   }
 
   .main-info {
+    margin-top: 50px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
-    background-color: var(--light-gray);
-      
+  }
+
+  .main-info > div {
+  flex: 1;
+  margin: 0 30px;
+  padding: 1em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 220px;
   }
 
   .featured {
@@ -161,21 +179,63 @@
   #spotlight {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   justify-items: center;
   align-items: stretch;
   width: 100%;
   box-sizing: border-box;
-}
+  }
 
-#spotlight section {
-  max-width: 350px;
-  width: 100%;
-  box-sizing: border-box;
-}
+  #spotlight section {
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .membership-card-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 2rem;
+    float: right;
+    width: 40%;
+  }
+
+  .member-form form {
+    grid-template-columns: 1fr;
+  }
+
+  .join-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  }
+
+  dialog {
+    border: none;
+    border-radius: 8px;
 }
+
+#np-dialog {
+    max-width: 60ch;
+}
+
+#bronze-dialog {
+    max-width: 60ch;
+}
+
+#silver-dialog {
+    max-width: 60ch;
+}
+
+#gold-dialog {
+    max-width: 60ch;
+}
+
+
+
+

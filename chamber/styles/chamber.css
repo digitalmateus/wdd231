@@ -6,25 +6,36 @@
     --text-color: rgb(50, 50, 50);
     --light-gray: rgb(250, 250, 250);
     --font-size: 16px;
-     font-family: 'open-sans', sans-serif;
-     min-width: 320px;
-     max-width: 650px;
+    font-family: 'open-sans', sans-serif;
+    min-width: 320px;
+    
 }
 
 header, footer {
     background-color: var(--primary-darkblue);
-    padding: 1em 1em;
+    padding: 40px;
+}
+
+footer {
+    color: var(--light-gray);
 }
 
 body {
     background-color: var(--light-gray);
-    margin: 0;
+    margin: 0 auto;
+    justify-content: center;
+    min-width: 350px;
+}
+
+main {
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .my-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     line-height: normal;
 }
@@ -372,4 +383,230 @@ section p {
     width: 200px;
     height: 200px;
     border-radius: 10px;
+}
+
+/* ---------Join page------------  */
+
+.member-form h1 {
+    margin: 0 auto;
+    color: var(--alternate-orange);
+    font-size: 25px;
+    text-align: center;
+}
+.member-form form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.member-form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-form input {
+  height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.member-form select {
+  height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* ------------------- join page cards -------------  */
+
+.membership-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.membership-plan.show {
+    opacity:1;
+}
+
+.membership-plan h3 {
+    color: var(--alternate-orange);
+}
+
+.membership-plan button {
+    color: var(--light-gray);
+    background-color: var(--primary-darkblue);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.non-profit {
+    background-color: var(--secondary-blue);
+    width:100%;
+    justify-items: center;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.gold-plan {
+    background-color: var(--secondary-blue);
+    width:100%;
+    justify-items: center;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.silver-plan {
+    background-color: var(--secondary-blue);
+    width:100%;
+    justify-items: center;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.bronze-plan {
+    background-color: var(--secondary-blue);
+    width:100%;
+    justify-items: center;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+#np-dialog {
+    max-width: 30ch;
+}
+
+#bronze-dialog {
+    max-width: 30ch;
+}
+
+#silver-dialog {
+    max-width: 30ch;
+}
+
+#gold-dialog {
+    max-width: 30ch;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+.join-main {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+
+/* -------------- animation ----------- */
+
+#non-profit {
+   animation: pulse infinite 2.5s ;
+   transition: background-color 0.5s ease, transform 0.5s ease;
+   transition: color 0.5s ease, transform 0.5s ease;
+   background-color: var(--secondary-blue);
+   position: relative;
+}
+
+#non-profit::after {
+    position:absolute;
+}
+
+#non-profit:hover {
+    animation: pulse none;
+    transform: translate(0, 0) scale (1); /* back to original size smoothly */
+    background-color: var(--primary-darkblue);
+    color: var(--light-gray);
+}
+
+/* -- ----------- */
+
+#gold-plan {
+   animation: pulse infinite 2.5s ;
+   transition: background-color 0.5s ease, transform 0.5s ease;
+   transition: color 0.5s ease, transform 0.5s ease;
+   background-color: var(--secondary-blue);
+   position: relative;
+}
+
+#gold-plan::after {
+    position:absolute;
+}
+
+#gold-plan:hover {
+    animation: pulse none;
+    transform: translate(0, 0) scale (1); /* back to original size smoothly */
+    background-color: var(--primary-darkblue);
+    color: var(--light-gray);
+}
+
+/* -- ----------- */
+
+#silver-plan {
+   animation: pulse infinite 2.5s ;
+   transition: background-color 0.5s ease, transform 0.5s ease;
+   transition: color 0.5s ease, transform 0.5s ease;
+   background-color: var(--secondary-blue);
+   position: relative;
+}
+
+#silver-plan::after {
+    position:absolute;
+}
+
+#silver-plan:hover {
+    animation: pulse none;
+    transform: translate(0, 0) scale (1); /* back to original size smoothly */
+    background-color: var(--primary-darkblue);
+    color: var(--light-gray);
+}
+
+/* -- ----------- */
+
+#bronze-plan {
+   animation: pulse infinite 2.5s ;
+   transition: background-color 0.5s ease, transform 0.5s ease;
+   transition: color 0.5s ease, transform 0.5s ease;
+   background-color: var(--secondary-blue);
+   position: relative;
+}
+
+#bronze-plan::after {
+    position:absolute;
+}
+
+#bronze-plan:hover {
+    animation: pulse none;
+    transform: translate(0, 0) scale (1); /* back to original size smoothly */
+    background-color: var(--primary-darkblue);
+    color: var(--light-gray);
+}
+
+
+@keyframes pulse {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+}
+
+
+.thankyou {
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+.thankyou h1 {
+    color: var(--primary-darkblue);
 }

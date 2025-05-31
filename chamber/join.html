@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+    <html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mateus Nunes">
+        <title>Chamber of Commerce | Sorocaba - SP</title>
+        <meta name="description" content="Welcome to the Chamber of Commerce of Sorocaba. Discover local businesses, events, and resources.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/chamber.css">
+        <link rel="stylesheet" href="styles/chamber-large.css">
+        <link rel="stylesheet" href="styles/chamber-cards.css">
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/menu.js" defer></script>
+        <script src="scripts/modal.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+        
+        <link rel="icon" href="favicon.ico">
+        <meta property="og:title" content="Chamber of Commerce Page for Sorocaba">
+        <meta property="og:description" content="Welcome to the Chamber of Commerce of Sorocaba. Discover local businesses, events, and resources.">
+        <meta property="og:image" content="https://digitalmateus.github.io/wdd231/chamber/images/sor-banner.webp">
+        <meta property="og:url" content="https://digitalmateus.github.io/wdd231/chamber/directory.html">
+    </head>
+
+    <body>
+        <header>
+            <div class="top-row">
+                <div class="main-logo">
+                    <img src="images/chamber-logo-white.png" alt="Chamber Logo" id="main-logo">
+                </div>
+                <div class="my-header">
+                    <span id="chamber-name">Sorocaba</span>
+                    <span id="chamber-description">Chamber of Commerce</span>
+                </div>
+            </div>
+
+            <div id="hamb-icon" class="toggle show">|||</div>
+            <div id="x-icon" class="toggle">X</div>
+
+            <nav id="navBar">  
+                <a href="index.html" class="active">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="#discover">Discover</a>
+            </nav>
+        </header>
+        <main class="join-main">
+            <div class="member-form">
+                <h1>Membership Application</h1>
+                <form method="get" action="thankyou.html">
+                    <label>
+                        First Name*:
+                        <input type="text" name="firstName" title="First Name" autocomplete="given-name" required /> 
+                    </label>
+                    
+                    <label>
+                        Last Name*:
+                        <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required /> 
+                    </label>
+
+                    <label>
+                        Occupation:
+                        <input type="text" name="Occupation" title="Occupation Title" autocomplete="organization-title" placeholder="Marketing" /> 
+                    </label>
+
+                    <label>
+                        Email*:
+                        <input type="email" name="email" title="Your email" placeholder="example@mail.com" required/> 
+                    </label>
+
+                    <label>
+                        Mobile Number*:
+                        <input type="tel" name="mobile" title="Mobile Number" autocomplete="tel" required placeholder="+99 99 99999 9999" /> 
+                    </label>
+
+                    <label>
+                        Company Name*:
+                        <input type="text" name="organization" title="Company Name" autocomplete="organization" required /> 
+                    </label>
+
+                    <label>
+                        Membership Level*:
+                        <select name="membershipLevel" title="Select a membership level">
+                            <option value="np">NP Membership (no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Organization Description:
+                        <textarea name="orgDescription" title="Brief description of organization"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp"/>
+                    <input type="submit" value="Submit Application" />
+
+                </form>
+            </div>
+        
+            <div class="membership-plan">
+                <div class="non-profit" id="non-profit">
+                    <h2>Non Profit</h2>
+                    <button id="open-modal-np">More Info</button>
+                    <dialog id="np-dialog">
+                        <h3>Non-Profit Member – $125/year</h3>
+                        <p><strong>Exclusive tier for verified 501(c)(3) organizations.</strong></p>
+                        <ul>
+                            <li>All Bronze Member benefits</li>
+                            <li>Access to nonprofit-specific networking events</li>
+                            <li>Discounted rates for community outreach booths</li>
+                            <li>Opportunities for nonprofit collaboration grants</li>
+                            <li>Featured listing in "Community Impact" directory section</li>
+                        </ul>
+                        <button id="close-modal" class="btn">Close</button>
+                    </dialog>
+                </div>
+
+                <div class="gold-plan" id="gold-plan">
+                    <h2>Gold Membership</h2>
+                    <button id="open-modal-gold">More Info</button>
+                    <dialog id="gold-dialog">
+                        <h3>Gold Member – $625/year</h3>
+                        <p><strong>Ideal for established businesses ready to lead and influence locally.</strong></p>
+                        <ul>
+                            <li>All Silver Member benefits</li>
+                            <li>Rotating homepage spotlight on Chamber website</li>
+                            <li>First access to sponsorship opportunities</li>
+                            <li>VIP access to select events</li>
+                            <li>25% discount on advertising packages</li>
+                            <li>Opportunity to host Chamber mixers or seminars</li>
+                        </ul>
+                        <button id="close-gold" class="btn">Close</button>
+                    </dialog>
+                </div>
+
+                <div class="silver-plan" id="silver-plan">
+                    <h2>Silver Membership</h2>
+                    <button id="open-modal-silver">More Info</button>
+                    <dialog id="silver-dialog">
+                        <h3>Silver Member – $275/year</h3>
+                        <p><strong>Great for small to mid-sized businesses seeking growth and exposure.</strong></p>
+                        <ul>
+                            <li>All Bronze Member benefits</li>
+                            <li>Enhanced listing with logo and link on Chamber site</li>
+                            <li>10% discount on booth space at Chamber events</li>
+                            <li>Member spotlight in newsletter (once per year)</li>
+                            <li>Priority referral placement from Chamber inquiries</li>
+                            <li>Access to monthly member training/workshops</li>
+                        </ul>
+                        <button id="close-silver" class="btn">Close</button>
+                    </dialog>
+                </div>
+
+                <div class="bronze-plan" id="bronze-plan">
+                    <h2>Bronze Membership</h2>
+                    <button id="open-modal-bronze">More Info</button>
+                    <dialog id="bronze-dialog">
+                        <h3>Bronze Member – $95/year</h3>
+                        <p><strong>Best for solopreneurs or community supporters who want to stay connected.</strong></p>
+                        <ul>
+                            <li>Access to 4 networking events per year</li>
+                            <li>Business listing on the Chamber website</li>
+                            <li>Chamber decal for storefront/website</li>
+                            <li>Monthly community newsletter</li>
+                            <li>Eligibility for Chamber volunteer committees</li>
+                        </ul>
+                        <button id="close-bronze" class="btn">Close</button>
+                    </dialog>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <section id="local-info">
+                <img src="images/chamber-logo-orange.png" id="logo-orange" alt="logo orange">
+                <h5>Sorocaba CoC</h5>
+                <p>Address goes here</p>
+                <p>999 999 999</p>
+            </section>
+            <section id="social-media">
+                <img src="images/ig-white-icon-256.png" id="instagram" alt="instagram icon">
+                <img src="images/fb-white-icon-256.png" id ="facebook" alt="facebook icon">
+            </section>
+            <section id="general-info">
+                <p>&copy; <span id="currentYear"></span> Mateus Nunes | Brazil</p>
+                <p> Last updated <span id="lastModified"></span></p>
+            </section>
+        </footer>
+    </body>
+</html>
