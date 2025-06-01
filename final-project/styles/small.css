@@ -10,7 +10,7 @@
 
 
 header {
-background-color: rgb(25, 42, 50);
+  background-color: rgb(25, 42, 50);
   display: grid;
   align-items: center;
   justify-content:safe;
@@ -156,6 +156,11 @@ nav.open {
   background-color: #c8e9fc;
 }
 
+.flight-card h4 {
+  color:  rgb(25, 42, 50);;
+  font-weight: 600;
+}
+
 /* ------ searching realtime IAIA ----------- */
 
 .suggestions {
@@ -163,7 +168,7 @@ nav.open {
   margin: 0;
   padding: 0;
   background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   max-height: 150px;
   overflow-y: auto;
   position: absolute;
@@ -176,4 +181,16 @@ nav.open {
 }
 .suggestions li:hover {
   background-color: #f0f0f0;
+}
+
+
+/* ------ FOOTER ----------- */
+
+footer {
+  background-color: rgb(25, 42, 50);
+  display: grid;
+  align-items: center;
+  justify-content:safe;
+  padding: 10px;
+  color: white;
 }

@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
   G3: "Gol Linhas Aéreas",
   LA: "LATAM Airlines",
   IAD: "Washington",
+  UX: "Air Europa",
   CDG: "Paris",
   // Add more as needed
 };
@@ -165,8 +166,10 @@ function getAirlineName(code) {
       card.classList.add('flight-card');
       card.innerHTML = `
         <h4>Option ${i + 1}</h4>
-        <p><strong>From:</strong> ${segment.departure.iataCode} (${segment.departure.at})</p>
-        <p><strong>To:</strong> ${segment.arrival.iataCode} (${segment.arrival.at})</p>
+        <p><strong>From:</strong> ${segment.departure.iataCode}</p>
+        <p><strong>Departure:</strong> ${segment.departure.at}</p>
+        <p><strong>To:</strong> ${segment.arrival.iataCode}</p>
+        <p><strong>Arrival:</strong> ${segment.arrival.at}</p>
         <p><strong>Airline:</strong> ${getAirlineName(segment.carrierCode)} (${segment.carrierCode})</p>
         <p><strong>Total Price:</strong> $${offer.price.total}</p>
       `;
