@@ -141,7 +141,7 @@ nav.open {
   color: white;
 }
 
-/* ------ searching realtime IAIA ----------- */
+/* ------ SEARCH RESULTS ----------- */
 
 #results {
   margin-top: 30px;
@@ -159,6 +159,13 @@ nav.open {
 .flight-card h4 {
   color:  rgb(25, 42, 50);;
   font-weight: 600;
+}
+
+.whatsapp-button {
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
 }
 
 /* ------ searching realtime IAIA ----------- */
