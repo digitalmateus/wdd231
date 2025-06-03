@@ -35,3 +35,12 @@ h2 {
     color: #cca404;
 }
 
+.wireframe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.wireframe img {
+    height: 50%;
+}
