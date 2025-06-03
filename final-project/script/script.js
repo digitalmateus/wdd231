@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Arrival:</strong> ${arrivalTime}</p>
       <p><strong>Airline:</strong> ${airline} (${airlineCode})</p>
       <p><strong>Total Price:</strong> $${price}</p>
-      <button class="whatsapp-button">I want this</button>
+      <button class="whatsapp-button"> <i class="fab fa-whatsapp"></i> I want this</button>
     `;
 
     const button = card.querySelector('.whatsapp-button');
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  function sendWhatsAppMessage(from, to, dates, airline, price) {
   const message = `Hello Maxima, I'm interested in this flight:\n\nFrom: ${from}\nTo: ${to}\nDates: ${dates}\nAirline: ${airline}\nPrice: ${price}`;
-  const phoneNumber = '5515997041806'; // Replace with your number (no +, no spaces)
+  const phoneNumber = '5515997041806'; 
   const encodedMessage = encodeURIComponent(message);
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 

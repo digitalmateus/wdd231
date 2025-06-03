@@ -1,0 +1,37 @@
+* {
+    margin: 0 auto;
+    font-family: "Roboto Slab";
+}
+
+main {
+    padding: 50px;
+}
+header, footer {
+    display: grid;
+    background-color: #1e3d58;
+    align-items: center;
+    justify-content: center;
+    padding: 30px ;
+    color: #ffffff;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    justify-content: left;
+    max-width: 800px;
+    }
+
+#color-schema {
+    height: 150px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #cca404;
+}
+
