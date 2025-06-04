@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 1024px  ) {
+@media screen and (min-width: 721px ) {
 
   :root {
     font-size: 16px;
@@ -236,7 +236,29 @@
   #gold-dialog {
       max-width: 60ch;
   }
+
+    #places section {
+
+        grid-template-areas: 
+        "photo  title"
+        "photo  desc"
+        "photo  location";
+    }
+
+    #places img {
+        width: 300px;
+    }
+
+    #places img:hover {
+      width: 320px;
+      animation: pulse none;
+      transition-duration: 0.5s;
+    }
+
+    @keyframes pulse {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.05);}
 }
 
 
-
+}
