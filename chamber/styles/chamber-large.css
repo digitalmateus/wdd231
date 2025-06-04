@@ -218,24 +218,24 @@
   dialog {
     border: none;
     border-radius: 8px;
-}
+ }
 
-#np-dialog {
-    max-width: 60ch;
-}
+  #np-dialog {
+      max-width: 60ch;
+  }
 
-#bronze-dialog {
-    max-width: 60ch;
-}
+  #bronze-dialog {
+      max-width: 60ch;
+  }
 
-#silver-dialog {
-    max-width: 60ch;
-}
+  #silver-dialog {
+      max-width: 60ch;
+  }
 
-#gold-dialog {
-    max-width: 60ch;
+  #gold-dialog {
+      max-width: 60ch;
+  }
 }
-
 
 
 
