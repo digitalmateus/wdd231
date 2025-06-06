@@ -14,13 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     returnDateInput.disabled = oneWayCheckbox.checked;
   });
 
-  // real time IATA suggestions
+  // Real time IATA suggestions
   const departureInput = document.getElementById('departure');
   const arrivalInput = document.getElementById('arrival');
   const departureSuggestions = document.getElementById('departureSuggestions');
   const arrivalSuggestions = document.getElementById('arrivalSuggestions');
 
-  // Auto-suggest airports
   [departureInput, arrivalInput].forEach((input) => {
     input.addEventListener('input', async () => {
       const query = input.value.trim();
@@ -65,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-  // end of IATA
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -120,11 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-
-
-  // companies IATA
-
-    const airlineNames = {
+  const airlineNames = {
     TP: "TAP Air Portugal",
     AA: "American Airlines",
     DL: "Delta Air Lines",
@@ -140,18 +134,16 @@ document.addEventListener('DOMContentLoaded', () => {
     LA: "LATAM Airlines",
     IAD: "Washington",
     UX: "Air Europa",
-    CDG: "Paris",
+    CDG: "Paris"
     // Add more as needed
   };
-
-
 
   function getAirlineName(code) {
     return airlineNames[code] || code;
   }
 
   function displayResults(data) {
-    resultsDiv.innerHTML = ''; // Clear previous
+    resultsDiv.innerHTML = '';
 
     if (!data.data || data.data.length === 0) {
       resultsDiv.innerHTML = '<p>No flights found.</p>';
@@ -159,58 +151,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     data.data.forEach((offer, i) => {
-    const itinerary = offer.itineraries[0];
-    const segment = itinerary.segments[0];
+      const itinerary = offer.itineraries[0];
+      const segment = itinerary.segments[0];
 
-    const departureCode = segment.departure.iataCode;
-    const arrivalCode = segment.arrival.iataCode;
-    const departureTime = segment.departure.at;
-    const arrivalTime = segment.arrival.at;
-    const airlineCode = segment.carrierCode;
-    const airline = getAirlineName(airlineCode);
-    const price = offer.price.total;
+      const departureCode = segment.departure.iataCode;
+      const arrivalCode = segment.arrival.iataCode;
+      const departureTime = segment.departure.at;
+      const arrivalTime = segment.arrival.at;
+      const airlineCode = segment.carrierCode;
+      const airline = getAirlineName(airlineCode);
+      const price = offer.price.total;
 
-    const card = document.createElement('div');
-    card.classList.add('flight-card');
-    card.innerHTML = `
-      <h4>Option ${i + 1}</h4>
-      <p><strong>From:</strong> ${departureCode}</p>
-      <p><strong>Departure:</strong> ${departureTime}</p>
-      <p><strong>To:</strong> ${arrivalCode}</p>
-      <p><strong>Arrival:</strong> ${arrivalTime}</p>
-      <p><strong>Airline:</strong> ${airline} (${airlineCode})</p>
-      <p><strong>Total Price:</strong> $${price}</p>
-      <button class="whatsapp-button"> <i class="fab fa-whatsapp"></i> I want this</button>
-    `;
+      const card = document.createElement('div');
+      card.classList.add('flight-card');
+      card.innerHTML = `
+        <h4>Option ${i + 1}</h4>
+        <p><strong>From:</strong> ${departureCode}</p>
+        <p><strong>Departure:</strong> ${departureTime}</p>
+        <p><strong>To:</strong> ${arrivalCode}</p>
+        <p><strong>Arrival:</strong> ${arrivalTime}</p>
+        <p><strong>Airline:</strong> ${airline} (${airlineCode})</p>
+        <p><strong>Total Price:</strong> $${price}</p>
+        <button class="whatsapp-button"> <i class="fab fa-whatsapp"></i> I want this</button>
+      `;
 
-    const button = card.querySelector('.whatsapp-button');
-    button.addEventListener('click', () => {
-      const dates = `${departureTime} - ${arrivalTime}`;
-      sendWhatsAppMessage(departureCode, arrivalCode, dates, airline, `$${price}`);
+      const button = card.querySelector('.whatsapp-button');
+      button.addEventListener('click', () => {
+        const dates = `${departureTime} - ${arrivalTime}`;
+        sendWhatsAppMessage(departureCode, arrivalCode, dates, airline, `$${price}`);
+      });
+
+      resultsDiv.appendChild(card);
     });
-
-    resultsDiv.appendChild(card);
-  });
   }
 
+  function sendWhatsAppMessage(from, to, dates, airline, price) {
+    const message = `Hello Maxima, I'm interested in this flight:\n\nFrom: ${from}\nTo: ${to}\nDates: ${dates}\nAirline: ${airline}\nPrice: ${price}`;
+    const phoneNumber = '5515997041806';
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
+    window.open(whatsappURL, '_blank');
+  }
 
+  // Hamburger menu toggle
+  const hamburgerElement = document.querySelector('#myButton');
+  const navElement = document.querySelector('#animate-menu');
 
- function sendWhatsAppMessage(from, to, dates, airline, price) {
-  const message = `Hello Maxima, I'm interested in this flight:\n\nFrom: ${from}\nTo: ${to}\nDates: ${dates}\nAirline: ${airline}\nPrice: ${price}`;
-  const phoneNumber = '5515997041806'; 
-  const encodedMessage = encodeURIComponent(message);
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-  window.open(whatsappURL, '_blank');
- }
-
-});
-
-const hamburgerElement = document.querySelector('#myButton');
-const navElement = document.querySelector('#animate-menu');
-
-hamburgerElement.addEventListener('click', () => {
+  hamburgerElement.addEventListener('click', () => {
     navElement.classList.toggle('open');
     hamburgerElement.classList.toggle('open');
-}); 
+  });
+});

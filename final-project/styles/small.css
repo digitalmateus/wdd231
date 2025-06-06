@@ -189,10 +189,12 @@ nav.open {
   width: 250px;
   z-index: 1000;
 }
+
 .suggestions li {
   padding: 8px;
   cursor: pointer;
 }
+
 .suggestions li:hover {
   background-color: #f0f0f0;
 }
@@ -203,8 +205,19 @@ nav.open {
 footer {
   background-color: rgb(25, 42, 50);
   display: grid;
-  align-items: center;
-  justify-content:safe;
-  padding: 10px;
+  padding: 50px;
   color: white;
+  gap: 10px;
+}
+
+footer section {
+  text-align: center;
+  gap: 5px;
+}
+
+
+/* ------ FEATUREs ----------- */
+
+.features {
+  background-color: #c8e9fc;
 }

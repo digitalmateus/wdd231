@@ -22,14 +22,36 @@
     }
 
     /*  ----------------- search ------------------  */
-
-    .search {
-        display: flex;
-        background-color: rgb(194, 216, 216);
-        max-width: 1000px;
+    main {
+        background-color: orange;
         margin: 0 auto;
     }
+    .search {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: white;
+        padding-top: 50px;
+        align-items: center;
+    }
 
+
+    .suggestions {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: white;
+        border: 1px solid white;
+        max-height: 150px;
+        overflow-y: auto;
+        position: absolute;
+        width: 250px;
+        z-index: 1000;
+        }
+
+    .suggestions li:hover {
+        background-color: white;
+    }
     .search form {
         display: flex;
         flex-wrap: wrap;
@@ -76,5 +98,29 @@
         box-sizing: border-box;
     }
     
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer section {
+        text-align: left;
+    }
+
+    /* ------ FEATUREs ----------- */
+
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        background-color: #c8e9fc;
+        padding: 20px 100px;
+        gap: 20px;
+    }
+    
+    
+
+
 }
 
