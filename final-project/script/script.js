@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const returnDateInput = document.getElementById('returnDate');
   const resultsDiv = document.getElementById('results');
 
-  const API_KEY = 'GvMPfXWPzDwwxwJ1UX65pCHucO6zreGF';
-  const API_SECRET = '3UrF5u8CeAvxlunz';
+  const API_KEY = 'NSSQzwh8G7bArxHJeG2u2cDe0ubClARw';
+  const API_SECRET = 'lVuC81GsNvsWSkL8';
   const BASE_URL = 'https://test.api.amadeus.com/v2';
 
   // Hide return date if "One-way" is checked
@@ -206,3 +206,11 @@ document.addEventListener('DOMContentLoaded', () => {
  }
 
 });
+
+const hamburgerElement = document.querySelector('#myButton');
+const navElement = document.querySelector('#animate-menu');
+
+hamburgerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open');
+}); 
