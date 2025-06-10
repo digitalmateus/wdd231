@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         departureDate,
         adults: '1',
         currencyCode: 'USD',
-        max: '3'
+        max: '6'
       });
 
       if (!isOneWay && returnDate) {

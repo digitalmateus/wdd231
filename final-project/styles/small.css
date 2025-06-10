@@ -1,5 +1,6 @@
 * {
-    margin: 0;
+
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
@@ -13,7 +14,7 @@ header {
   background-color: rgb(25, 42, 50);
   display: grid;
   align-items: center;
-  justify-content:safe;
+  justify-content:center;
   padding: 10px;
 }
 
@@ -21,7 +22,8 @@ header {
   display: grid;
    grid-template-columns: 44px auto 44px;
   align-items: center;  
-  padding: 20px;
+  padding: 30px;
+  gap:20px;
 }
 
 .logo {
@@ -46,14 +48,14 @@ header {
 }
 
 #myButton {
-    font-size: 2rem;
+    font-size: 30px;
     background: none;
     border: none;
     color:rgb(255, 255, 255);
     cursor: pointer;
     width: 100%;
-    text-align: right;
-    padding: .75rem 2vw;
+    text-align: center;
+    
 }
 
 .menuLinks li a {
@@ -135,11 +137,7 @@ nav.open {
 
 
 .search button:hover {
-  height: 60px;
-  padding: 0 10px;
-  box-sizing: border-box;
   background-color: rgb(34, 50, 80);
-  border-radius: 10px;
   color: white;
 }
 
@@ -199,6 +197,72 @@ nav.open {
   background-color: #f0f0f0;
 }
 
+/* ------ FEATURES ----------- */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 50px;
+  justify-content: center;
+}
+
+section.feature1 {
+  justify-content: center;
+  text-align: center;
+}
+
+section.feature1 h2 {
+  color: rgb(24, 24, 48);
+  font-weight: 600;
+}
+
+section.feature1 p {
+  color: rgb(31, 31, 31);
+}
+
+section.feature1 img {
+  border-radius: 10px;
+  min-height: 100px;
+  min-width: auto;
+}
+
+section.feature2 {
+  justify-content: center;
+  text-align: center;
+}
+
+section.feature2 h2 {
+  color: rgb(24, 24, 48);
+  font-weight: 600;
+}
+
+section.feature2 p {
+  color: rgb(31, 31, 31);
+}
+
+section.feature2 img {
+  border-radius: 10px;
+}
+
+section.feature3 {
+  justify-content: center;
+  text-align: center;
+}
+
+section.feature3 h2 {
+  color: rgb(24, 24, 48);
+  font-weight: 600;
+}
+
+section.feature3 p {
+  color: rgb(31, 31, 31);
+}
+
+section.feature3 img {
+  border-radius: 10px;
+  min-width: 0;
+}
 
 /* ------ FOOTER ----------- */
 
