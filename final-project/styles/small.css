@@ -14,8 +14,9 @@ header {
   background-color: rgb(25, 42, 50);
   display: grid;
   align-items: center;
-  justify-content:center;
+  justify-content:space-evenly;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .brand {
@@ -64,10 +65,15 @@ header {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 300;
+    min-width: 300px;
+    min-height: 60px;
+    text-align: center;
+    align-content: center;
 }
 
 li.current-menu-item a{
     background-color: rgba(0,0,0,0.2);
+    border: 0.2px solid rgb(59, 152, 238);
 }
 
 ul.menuLinks {
@@ -80,7 +86,7 @@ ul.menuLinks {
 }
 
 ul.menuLinks.open {
-    /* display: block; */
+    display: block;
 }
 
 nav {
@@ -101,7 +107,7 @@ nav.open {
 /*  ----------------- search ------------------  */
 
 .search form {
-    display: grid;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 20px;
@@ -112,16 +118,17 @@ nav.open {
 }
 .search input {
   height: 50px;
+  min-width: 300px;
   padding: 10px;
   box-sizing: border-box;
   font-size: large;
 }
 
 .search #oneWayLabel {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     align-items: center;
     justify-content:center;
+    text-align: center;
     gap: 10px;
 }
 
@@ -133,6 +140,7 @@ nav.open {
   border-radius: 10px;
   border: 0;
   font-size: large;
+  min-width: 300px;
 }
 
 
@@ -284,4 +292,87 @@ footer section {
 
 .features {
   background-color: #c8e9fc;
+}
+
+
+/* ---------Join page------------  */
+
+
+
+.member-form h1 {
+    display: flex;
+    margin-top: 50px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.member-form form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.member-form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-form input {
+  height: 40px;
+  min-width: 300px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.member-form textarea {
+  line-height: 6;
+  min-width: 300px;
+}
+
+.contact-banner {
+  display: grid;
+  background-color: rgb(0, 140, 255);
+  padding: 50px;
+}
+
+.contact-banner img {
+  border-radius: 15px;
+}
+
+.contact-banner h2 {
+  color: rgb(16, 16, 36);
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.contact-banner p {
+  color: rgb(16, 16, 36);
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.whatsapp-button-container {
+  display: grid;
+  padding: 40px;
+  background-color: rgb(0, 140, 255);
+}
+
+.whatsapp-button {
+  border-radius: 10px;
+  border: 1px solid rgb(219, 252, 219);
+  text-decoration: none;
+  min-width: 300px;
+}
+
+.thankyou {
+  margin-top: 100px;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
 }
