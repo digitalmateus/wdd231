@@ -365,7 +365,7 @@ footer section {
 
 .contact-banner {
   display: grid;
-  background-color: rgb(0, 140, 255);
+  background-color: rgb(160, 207, 244);
   padding: 50px;
 }
 
@@ -389,7 +389,7 @@ footer section {
 .whatsapp-button-container {
   display: grid;
   padding: 40px;
-  background-color: rgb(0, 140, 255);
+  
 }
 
 .whatsapp-button {
