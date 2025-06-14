@@ -28,20 +28,40 @@
         padding-left: 70px;
     }
 
+    .company-name {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: white;
+        margin-left: 10px;
+    }
+
+
+
     /*  ----------------- search ------------------  */
     main {
         display: flex;
         flex-direction: column;
-        background-color: orange;
         margin: 0 auto;
+        align-items: center;
+
     }
+
+    main h1 {
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    main p {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
     .search {
         display: flex;
-        max-width: 1000px;
-        margin: 0 auto;
+        flex-direction: column;
+        max-width: 100%;
         background-color: white;
         padding-top: 50px;
-        align-items: center;
     }
 
 
@@ -61,26 +81,20 @@
     .suggestions li:hover {
         background-color: white;
     }
+
     .search form {
         display: flex;
         flex-wrap: wrap;
-        max-width: 1000px;
-        margin: auto;
-        justify-content: center;
+        justify-content:space-evenly;
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
-    .search #oneWayLabel {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        gap: 10px;
-        align-items: center;
-    }
 
     .search button {
         height: 60px;
-        width: 220px;
+        min-width: 400px;
+        max-width: 500;
         padding: 0 10px;
         box-sizing: border-box;
         background-color: cornflowerblue;
@@ -96,12 +110,22 @@
     .search label {
         display: flex;
         flex-direction: column;
+        font-size: 15px;
     }
+
     .search input {
-        height: 60px;
+        height: 80px;
         padding: 0 10px;
-        box-sizing: border-box;
     }
+
+
+    #flightForm {
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 80%;
+    }
+
+
     
     footer {
         display: grid;
@@ -116,42 +140,39 @@
 
 
     .features {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        padding-left: 50px;
-        padding-right: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
         background-color: #c8e9fc;
         margin: 0 auto;
+        max-width: 100%;
+        justify-content: center;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
     }
 
-    
-    section.feature1 {
+    section.feature {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 10px;
+        flex-wrap: wrap;
     }
 
-    section.feature2 {
-        display: flex;
-        flex-direction: column;
+    .features h2 {
+        font-size: 22px;
     }
 
-    section.feature3 {
-        display: flex;
-        flex-direction: column;
+    .features p {
+        font-size: 15px;
     }
 
-    section.feature1 h2 {
-        padding: 10px;
-    }
 
-    section.feature2 h2 {
-        padding: 10px;
-    }
 
-    section.feature3 h2 {
-        padding: 10px;
-    }
 
     /* ------ SEARCH RESULTS ----------- */
 
@@ -198,5 +219,55 @@
         cursor: pointer;
     }
 
-    
+    .contact-page {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .member-form input {
+        height: 60px;
+        border-radius: 5px;
+        border-color: white;
+        min-width: 400px;
+    }
+
+    .member-form textarea {
+        min-width: 400px;
+    }
+
+    .contact-banner {
+        padding: 100px, 50px;
+    }
+
+    .about-business {
+        display: flex;
+        flex-direction: row;
+        padding-left:5rem;
+        padding-right: 5rem;
+        padding-top: 150px;
+    }
+
+    .about-text {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        
+    }
+
+    .about-agents {
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        justify-content: center;
+        align-items: center;
+        padding:5rem;
+        background-color: rgb(252, 231, 203);
+        gap: 5px    ;
+    }
+
+    .team-member {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+    }
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mateus Nunes">
+  <title>About - Maxima Travel Agency</title>
+  <meta name="description" content="About Maxima Travel">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <link rel="icon" href="../favicon.ico">
+    
+  <meta property="og:title" content="Maxima Travel Agency">
+  <meta property="og:description" content="Welcome to Maxima Travel Agency. Discover amazing travel deals and destinations.">
+  <meta property="og:image" content="https://digitalmateus.github.io/wdd231/final-project/images/maxima-logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://digitalmateus.github.io/wdd231/final-project/index.html">
+
+</head>
+<body>
+  <header>
+    <div class="brand">
+        <img src="images/maxima-logo.png" alt="Company Logo" class="logo">
+        <span class="company-name">Maxima Travel</span>
+        <button id="myButton"></button>
+    </div>
+    <nav id="animate-menu">
+      <ul class="menuLinks">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="about.html" title="About">About</a></li>
+        <li class="current-menu-item"><a href="contact.html" title="Contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main>
+    <div class="about-business">
+        <div class="about-text">
+        <h1>About Us</h1>
+        <p>Welcome to Maxima Travel, your premier travel agency dedicated to making your travel dreams a reality. With years of experience in the industry, we specialize in creating personalized travel experiences that cater to your unique preferences and needs.</p>
+        <p>Our team of expert travel consultants is passionate about exploring the world and sharing their knowledge with you. Whether you're looking for a relaxing beach getaway, an adventurous mountain trek, or a cultural city tour, we have the expertise to help you plan the perfect trip.</p>
+        <p>At Maxima Travel, we believe that travel should be accessible to everyone. That's why we offer a wide range of travel packages and services at competitive prices. From flights and accommodations to guided tours and activities, we take care of all the details so you can focus on enjoying your journey.</p>
+        <p>Join us on an unforgettable adventure and let us help you create memories that will last a lifetime. Contact us today to start planning your next getaway!</p>
+        </div>
+
+        <div class="about-image">
+            <img src="images/maxima-building-1.webp" alt="About Us Image" class="about-img">
+            <p class="image-caption">Discover the world with Maxima Travel</p>
+        </div>
+    </div>
+    <div class="about-agents">
+        <div class="about-team">
+            <h2>Meet Our Team</h2>
+            <p>Our dedicated team of travel experts is here to assist you every step of the way. With a passion for travel and a commitment to exceptional service, we strive to make your travel experience seamless and enjoyable.</p>
+            <p>From planning your itinerary to providing on-the-ground support, our team is here to ensure that your journey is nothing short of extraordinary. Get to know the faces behind Maxima Travel and let us help you explore the world with confidence.</p>
+        </div>   
+        <div class="team-member">
+            <img src="images/agent-1-maria.webp" alt="Team Member 1" class="team-photo">
+            <h3>Maria Garcia</h3>
+            <h4>Travel Consultant</h4>
+        </div>
+        <div class="team-member">
+            <img src="images/agent-2-lara.webp" alt="Team Member 2" class="team-photo" loading="lazy">
+            <h3>Lara Maria</h3>
+            <h4>Travel Specialist</h4>
+        </div>
+        <div class="team-member">
+            <img src="images/agent-3-monica.webp" alt="Team Member 3" class="team-photo" loading="lazy">
+            <h3>Monica Geller</h3>
+            <h4>Customer Service Manager</h4>
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <section id="social-media">
+        <img src="images/ig-white-icon-256.png" id="instagram" alt="instagram icon">
+        <img src="images/fb-white-icon-256.png" id ="facebook" alt="facebook icon">
+    </section>
+    <section id="general-info">
+        <p>&copy; <span id="currentYear"></span> Mateus Nunes | Brazil</p>
+        <p> Last updated <span id="lastModified"></span></p>
+    </section>
+  </footer>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+</body>
+</html>
