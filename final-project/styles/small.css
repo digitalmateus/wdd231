@@ -325,6 +325,12 @@ footer section {
   gap: 5px;
 }
 
+footer a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
 
 /* ------ FEATUREs ----------- */
 
