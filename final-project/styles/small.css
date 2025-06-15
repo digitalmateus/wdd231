@@ -184,6 +184,7 @@ main p {
 #results {
   margin-top: 30px;
   padding: 20px;
+  
 }
 
 .flight-card {
@@ -192,19 +193,26 @@ main p {
   padding: 15px;
   margin-bottom: 15px;
   background-color: #c8e9fc;
+  line-height: 0.5rem;
+  
 }
 
 .flight-card h4 {
   color:  rgb(25, 42, 50);;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
+  font-size: 25px;
 }
 
+ .flight-card p {
+    font-size: 20px;
+    text-align: left;
+  }
 .whatsapp-button {
   background-color: green;
   padding: 15px;
   border-radius: 5px;
-  color: white;
+  color: rgb(20, 10, 10);
   font-weight: 600;
   height: 55px;
   font-size: large;
