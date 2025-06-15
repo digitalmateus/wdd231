@@ -183,26 +183,25 @@
     /* ------ SEARCH RESULTS ----------- */
 
     #results {
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
     }
 
     .flight-card {
         padding: 20px;
-        height: 300px;
-        width: 300px;
+        line-height: 0.5rem;
+        text-align: left;
     }
 
     .flight-card p {
         font-size: 20px;
+        text-align: left;
     }
 
     .flight-card h4 {
         font-size: 25px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
 
     }
 
