@@ -78,6 +78,12 @@
         z-index: 1000;
         }
 
+    .suggestions-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+        
     .suggestions li:hover {
         background-color: white;
     }
@@ -94,7 +100,7 @@
     .search button {
         height: 60px;
         min-width: 400px;
-        max-width: 500;
+        max-width: 500px;
         padding: 0 10px;
         box-sizing: border-box;
         background-color: cornflowerblue;
@@ -236,7 +242,7 @@
     }
 
     .contact-banner {
-        padding: 100px, 50px;
+        padding: 100px 50px;
     }
 
     .about-business {

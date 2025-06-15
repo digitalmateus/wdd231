@@ -52,15 +52,19 @@
     <div class="search">
       
       <form id="flightForm">
-        <label for="departure">From*:
-          <input type="text" id="departure" name="departure" placeholder="City of departure" required>
-          <ul id="departureSuggestions" class="suggestions"></ul>
-        </label>
-
-        <label for="arrival">To*:
-          <input type="text" id="arrival" name="arrival" placeholder="City of arrival" required>
+        <div class="suggestions-container">
+          <label for="departure">From*:
+            <input type="text" id="departure" name="departure" placeholder="City of departure" required>
+          </label>
+          <ul id="departureSuggestions" class="suggestions"></ul>   
+          
+        </div>
+        <div class="suggestions-container">
+          <label for="arrival">To*:
+            <input type="text" id="arrival" name="arrival" placeholder="City of arrival" required>
+          </label>
           <ul id="arrivalSuggestions" class="suggestions"></ul>
-        </label>
+        </div>
 
         <label for="departureDate">Departure Date*:
           <input type="date" id="departureDate" name="departureDate" required>

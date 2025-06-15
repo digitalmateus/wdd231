@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
 }
@@ -445,25 +444,25 @@ footer section {
 .about-team h2 {
   text-align: center;
   font-size: 34px;
-  font-weight: 600px;
+  
 }
 
 .about-team h3 {
   text-align: center;
-  font-size: 25px;
-  font-weight: 600px;
+  font-size: 35px;
+  
 }
 
 .about-team h4 {
   text-align: center;
   font-size: 15px;
-  font-weight: 600px;
+  
 }
 
 .about-team p {
   text-align: center;
   font-size: 15px;
-  font-weight: 600px;
+  
   padding-left: 30px;
   padding-right: 30px;
   text-align: justify;
@@ -473,5 +472,10 @@ footer section {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #c8e9fc;
+  text-align: center;
   
+}
+
+.team-member h3 {
+  font-size: 25px;
 }
