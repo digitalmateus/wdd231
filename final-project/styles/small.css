@@ -479,3 +479,64 @@ footer section {
 .team-member h3 {
   font-size: 25px;
 }
+
+.team-member p {
+  font-size: 12px;
+}
+
+#np-dialog {
+    max-width: 30ch;
+    border: none;
+    padding: 10px;
+    opacity: 0.8;
+    margin: auto;
+}
+
+#lm-dialog {
+    max-width: 30ch;
+    border: none;
+    padding: 10px;
+    opacity: 0.8;
+    margin: auto;
+}
+
+#mg-dialog {
+    max-width: 30ch;
+    border: none;
+    padding: 10px;
+    opacity: 0.8;
+    margin: auto;
+}
+
+#np-dialog  h3 {
+  font-size: 20px;
+  font-style: oblique;
+  padding: 5px;
+}
+
+#lm-dialog h3 {
+  font-size: 20px;
+  font-style: oblique;
+  padding: 5px;
+}
+
+#mg-dialog  h3 {
+  font-size: 20px;
+  font-style: oblique;
+  padding: 5px;
+}
+
+#np-dialog  p {
+  font-size: 15px;
+  padding: 5px;
+}
+
+#lm-dialog p {
+  font-size: 15px;
+  padding: 5px;
+}
+
+#mg-dialog :past {
+  font-size: 15px;
+  padding: 5px;
+}
